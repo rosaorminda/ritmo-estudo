@@ -50,3 +50,13 @@ Exporte um backup antes de atualizar os arquivos. Para alterar o aplicativo, env
 ## Arquivos
 
 index.html, style.css, app.js e plan.js: aplicativo e plano; manifest.webmanifest, sw.js e ícones: instalação/offline; server.cjs e INICIAR.cmd: execução local opcional; .nojekyll: publicação estática. Nenhum serviço externo é chamado para registrar seus estudos.
+
+## Apostilas em PDF (versão 2)
+
+Na aba **Apostilas**, escolha um PDF de até 50 MB e indique onde ele deve aparecer: em todas as sessões de uma disciplina ou somente em uma sessão específica. Clique em **Salvar apostila**. Você também pode fazer isso diretamente no painel, em **Apostilas desta sessão**.
+
+Exemplo: vincule sua apostila à disciplina Português. Ela aparecerá na sessão 1 e nas outras sessões de Português. Para uma apostila exclusiva de interpretação de textos, escolha somente a sessão 1.
+
+Use **Abrir PDF** para ler dentro do aplicativo. Alguns navegadores de celular não mostram PDFs dentro da tela: nesse caso, use **Abrir em nova aba** ou **Baixar PDF**. Não há extração automática de capítulos nem marcação de páginas nesta versão.
+
+Os arquivos ficam no armazenamento local de PDFs do navegador (IndexedDB), sem envio ao GitHub ou a servidores. Podem ser acessados offline após adicionados, desde que o aplicativo já esteja disponível offline. O espaço depende do navegador. **O backup JSON de progresso não inclui PDFs.** Guarde os originais, baixe cópias pela biblioteca e adicione novamente no outro aparelho. Limpar os dados do site também apaga a biblioteca. Editar o nome de uma disciplina exige vincular novamente os PDFs associados àquele nome; os PDFs associados pelo número da sessão continuam vinculados.
